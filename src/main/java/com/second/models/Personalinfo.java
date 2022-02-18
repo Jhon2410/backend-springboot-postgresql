@@ -30,6 +30,18 @@ public class Personalinfo{
 		this.first_name=first_name;
 	}
 
+	public Integer getId_personalInfo() {
+		return id_personalInfo;
+	}
+
+	public void setId_personalInfo(Integer id_personalInfo) {
+		this.id_personalInfo = id_personalInfo;
+	}
+
+	public void setCode_country(Integer code_country) {
+		this.code_country = code_country;
+	}
+
 	public String getLast_name(){
 		return last_name;
 	}

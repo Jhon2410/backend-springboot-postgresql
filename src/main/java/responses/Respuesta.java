@@ -1,20 +1,20 @@
 package responses;
 
-import java.util.List;
 
-import com.second.models.usuarioModel;
+
+
+
 
 public class Respuesta {
+	
+	
 
 	private String msg;
-	private List<usuarioModel> data;
 	private int status;
-	public List<usuarioModel> getData() {
-		return data;
-	}
-	public void setData(List<usuarioModel> data) {
-		this.data = data;
-	}
+	
+	
+	
+
 	public String getMsg() {
 		return msg;
 	}

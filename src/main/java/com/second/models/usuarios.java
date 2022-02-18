@@ -22,52 +22,50 @@ public class usuarios {
 	private Integer coustom_info;
 	@Column
 	private String foto_url;
-
-	public String getUsuario_username(){
+	public Integer getId_usuario() {
+		return id_usuario;
+	}
+	public void setId_usuario(Integer id_usuario) {
+		this.id_usuario = id_usuario;
+	}
+	public String getUsuario_username() {
 		return usuario_username;
 	}
-
-	public void setUsuario_username(String usuario_username){
-		this.usuario_username=usuario_username;
+	public void setUsuario_username(String usuario_username) {
+		this.usuario_username = usuario_username;
 	}
-
-	public String getUsuario_contraseña(){
+	public String getUsuario_contraseña() {
 		return usuario_contraseña;
 	}
-
-	public void setUsuario_contraseña(String usuario_contraseña){
-		this.usuario_contraseña=usuario_contraseña;
+	public void setUsuario_contraseña(String usuario_contraseña) {
+		this.usuario_contraseña = usuario_contraseña;
 	}
-
-	public int getWallet(){
+	public Integer getWallet() {
 		return wallet;
 	}
-
-	public void setWallet(int wallet){
-		this.wallet=wallet;
+	public void setWallet(Integer wallet) {
+		this.wallet = wallet;
 	}
-
-	public int getPersonalinfo(){
+	public Integer getPersonalInfo() {
 		return personalInfo;
 	}
-
-	public void setPersonalinfo(int personalInfo){
-		this.personalInfo=personalInfo;
+	public void setPersonalInfo(Integer personalInfo) {
+		this.personalInfo = personalInfo;
 	}
-
-	public int getCoustom_info(){
+	public Integer getCoustom_info() {
 		return coustom_info;
 	}
-
-	public void setCoustom_info(int coustom_info){
-		this.coustom_info=coustom_info;
+	public void setCoustom_info(Integer coustom_info) {
+		this.coustom_info = coustom_info;
 	}
-
-	public String getFoto_url(){
+	public String getFoto_url() {
 		return foto_url;
 	}
-
-	public void setFoto_url(String foto_url){
-		this.foto_url=foto_url;
+	public void setFoto_url(String foto_url) {
+		this.foto_url = foto_url;
 	}
+
+
+
+
 }

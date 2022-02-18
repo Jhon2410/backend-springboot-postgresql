@@ -21,6 +21,14 @@ public class Friends {
 	@Column
 	private String foto_url;
 
+	public Integer getId_friend() {
+		return id_friend;
+	}
+
+	public void setId_friend(Integer id_friend) {
+		this.id_friend = id_friend;
+	}
+
 	public int getId_usuario_pertenece(){
 		return id_usuario_pertenece;
 	}

@@ -39,6 +39,14 @@ public class Coustom_info_user {
 		return pricing;
 	}
 
+	public Integer getId_coustom_info() {
+		return id_coustom_info;
+	}
+
+	public void setId_coustom_info(Integer id_coustom_info) {
+		this.id_coustom_info = id_coustom_info;
+	}
+
 	public void setPricing(String pricing){
 		this.pricing=pricing;
 	}

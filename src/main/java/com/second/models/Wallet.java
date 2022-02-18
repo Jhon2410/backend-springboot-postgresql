@@ -11,36 +11,37 @@ public class Wallet {
 	@Id
 	@GeneratedValue
 	private Integer id_wallet;
-	
 	@Column
 	private Integer starts;
 	@Column
 	private String estado;
 	@Column
 	private Integer estadisticas;
-
-	public int getStarts(){
+	public Integer getId_wallet() {
+		return id_wallet;
+	}
+	public void setId_wallet(Integer id_wallet) {
+		this.id_wallet = id_wallet;
+	}
+	public Integer getStarts() {
 		return starts;
 	}
-
-	public void setStarts(int starts){
-		this.starts=starts;
+	public void setStarts(Integer starts) {
+		this.starts = starts;
 	}
-
-	public String getEstado(){
+	public String getEstado() {
 		return estado;
 	}
-
-	public void setEstado(String estado){
-		this.estado=estado;
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
-
-	public int getEstadisticas(){
+	public Integer getEstadisticas() {
 		return estadisticas;
 	}
-
-	public void setEstadisticas(int estadisticas){
-		this.estadisticas=estadisticas;
+	public void setEstadisticas(Integer estadisticas) {
+		this.estadisticas = estadisticas;
 	}
+
+
 
 }

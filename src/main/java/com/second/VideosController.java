@@ -1,6 +1,7 @@
 package com.second;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -51,6 +52,23 @@ public class VideosController {
 		if(video.getTitulo_video() != null) {
 			videosDao.save(video);
 			 msg ="video agregado";
+			 status = 1;
+		}
+
+		
+		res.setMsg(msg);
+		res.setStatus(status);
+		return res;
+	}
+	
+	@DeleteMapping("/delete")
+	public Respuesta delete(@RequestBody videos_publicacion video) {
+		Respuesta res = new Respuesta();
+		String msg ="video no pudo ser eliminado.";
+		int status = 0;
+		if(video.getTitulo_video() != null) {
+			videosDao.deleteById(video.getId_video_publicacion());
+			 msg ="video eliminado";
 			 status = 1;
 		}
 

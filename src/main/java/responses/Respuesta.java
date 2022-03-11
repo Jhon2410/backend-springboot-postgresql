@@ -1,20 +1,10 @@
 package responses;
 
+import org.apache.catalina.connector.Response;
 
-
-
-
-
-public class Respuesta {
-	
-	
-
+public class Respuesta extends Response {
 	private String msg;
 	private int status;
-	
-	
-	
-
 	public String getMsg() {
 		return msg;
 	}
@@ -27,5 +17,4 @@ public class Respuesta {
 	public void setStatus(int status) {
 		this.status = status;
 	}
-	
 }

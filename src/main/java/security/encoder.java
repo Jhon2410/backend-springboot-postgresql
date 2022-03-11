@@ -9,8 +9,7 @@ import javax.swing.JOptionPane;
 import org.apache.commons.codec.binary.Base64;
 
 public class encoder  {
-         String secretKey = "encriptar";
-    
+        String secretKey = "encriptar";
         public String ecnode(String cadena) {
         String encriptacion = "";
         try {
@@ -43,7 +42,6 @@ public class encoder  {
             decipher.init(Cipher.DECRYPT_MODE, key);
             byte[] plainText = decipher.doFinal(message);
             desencriptacion = new String(plainText, "UTF-8");
-
         } catch (Exception ex) {
             System.out.println( ex);
         }

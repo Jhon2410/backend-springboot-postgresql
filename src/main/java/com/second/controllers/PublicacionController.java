@@ -1,6 +1,7 @@
 package com.second.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +17,7 @@ import responses.Respuesta;
 
 @RestController
 @RequestMapping("/network/publicacion")
+@CrossOrigin(origins = "*")
 public class PublicacionController {
 	
 	@Autowired
@@ -31,15 +33,11 @@ public class PublicacionController {
 		Respuesta res = new Respuesta();
 		String msg = "No se ha podido crear la publicacion.";
 		Integer status = 0;
-		
 		if(publicNet.getContenido_publicacion() != null) {
 			publicacionDao.save(publicNet);
 			 msg = "La publicacion ha sido creado.";
 			 status = 1;
 		}
-		
-		
-		
 		res.setMsg(msg);
 		res.setStatus(status);
 		return res;
@@ -50,15 +48,11 @@ public class PublicacionController {
 		Respuesta res = new Respuesta();
 		String msg = "No se ha podido crear actualizar.";
 		Integer status = 0;
-		
 		if(publicNet.getContenido_publicacion() != null) {
 			publicacionDao.save(publicNet);
 			 msg = "La publicacion ha sido actualizada.";
 			 status = 1;
 		}
-		
-		
-		
 		res.setMsg(msg);
 		res.setStatus(status);
 		return res;
@@ -69,18 +63,13 @@ public class PublicacionController {
 		Respuesta res = new Respuesta();
 		String msg = "No se ha podido eliminar la publicacion.";
 		Integer status = 0;
-		
 		if(publicNet.getId_publicacion() != null) {
 			publicacionDao.deleteById(publicNet.getId_publicacion());
 			 msg = "La publicacion ha sido eliminada.";
 			 status = 1;
 		}
-		
-		
-		
 		res.setMsg(msg);
 		res.setStatus(status);
 		return res;
 	}
-
 }

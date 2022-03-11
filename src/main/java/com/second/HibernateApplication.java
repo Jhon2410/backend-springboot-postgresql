@@ -12,7 +12,6 @@ public class HibernateApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HibernateApplication.class, args);
 	}
-	
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
@@ -22,5 +21,8 @@ public class HibernateApplication {
 			}
 		};
 	}
-	
+		
+		
 }
+	
+
